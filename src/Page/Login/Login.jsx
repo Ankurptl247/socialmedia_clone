@@ -6,30 +6,40 @@ const Login = () => {
 
     return (
         <>
-            <div id="login ">
-                <div className="card">
-                    <div className="left">
-                        <h1>Hello World.</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-                            alias totam numquam ipsa exercitationem dignissimos, error nam,
-                            consequatur.
+            <div className="flex h-screen justify-center bg-gray-200 items-center">
+                <div className="w-full md:w-3/6 flex flex-col md:flex-row h-auto md:h-[600px] bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div className="left flex p-8 md:p-16 flex-col gap-10 w-full md:w-1/2 bg-gradient-to-b from-purple-600 to-purple-500 text-white">
+                        <h1 className='text-5xl md:text-8xl font-bold'>Hello World.</h1>
+                        <p className='text-sm md:text-base'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum, alias totam numquam ipsa exercitationem dignissimos, error nam, consequatur.
                         </p>
-                        <span>Don't you have an account?</span>
+                        <span className='text-xs md:text-sm'>Don't you have an account?</span>
                         <Link to="/Register">
-                            <button>Register</button>
+                            <button className='bg-gray-100 text-purple-800 px-8 py-2 rounded-md font-semibold transition-transform transform hover:scale-105'>Register</button>
                         </Link>
                     </div>
-                    <div className="right">
-                        <h1>Login</h1>
+                    <div className="p-8 md:p-16 w-full md:w-1/2 flex flex-col gap-12 justify-center bg-gray-50">
+                        <h1 className='font-semibold text-3xl text-gray-800'>Login</h1>
+                        
                         <form>
-                            <input type="text" placeholder="Username" />
-                            <input type="password" placeholder="Password" />
-                            <button>Login</button>
+                            <div className="flex flex-col gap-3">
+                                <input
+                                    type="text"
+                                    placeholder="Username"
+                                    className="rounded-md p-2 outline-none w-full"
+                                />
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    className="rounded-md p-2 outline-none w-full" 
+                                />
+                            </div>
+                           <button className='bg-purple-500 px-10 py-2 rounded-md mt-5 text-white font-semibold'>Login</button> 
                         </form>
                     </div>
                 </div>
             </div>
+
 
         </>
     )
