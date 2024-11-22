@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navbar flex items-center justify-between px-6 py-3 bg-slate-200 sticky top-0 z-50">
         <div className="left flex justify-between items-center gap-5">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <img src={logoImg} height="100px" width="100px" alt="Logo" />
+            <img className="md:w-5 lg:w-28 sm:w-14" src={logoImg}  alt="Logo" />
           </Link>
           <HomeOutlinedIcon />
           <WbSunnyOutlinedIcon />
@@ -31,8 +31,9 @@ const Navbar = () => {
           <PersonOutlinedIcon />
           <EmailOutlinedIcon />
           <NotificationsOutlinedIcon />
-          <div className="user">
-
+          <div className="user flex justify-center items-center gap-2">
+            <img className="rounded-[50%] bg-slate-500 h-7 w-7" src="" alt="" />
+            <span>Ankur Patel</span>            
           </div>
         </div>
       </div>

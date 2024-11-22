@@ -2,7 +2,7 @@ import Navbar from "./components/navbar/Navbar";
 import Login from "./Page/Login/Login"
 import Register from "./Page/Register/Register";
 import { createBrowserRouter, RouterProvider, Route, Outlet, Navigate } from "react-router-dom";
-import LeftBar from "./components/leftbar/LeftBar";
+import LeftBar from "./components/leftbar/Leftbar";
 import RightBar from "./components/rightbar/RightBar";
 import Home from "./Page/Home/Home"
 import Profile from "./Page/Profile/Profile";
